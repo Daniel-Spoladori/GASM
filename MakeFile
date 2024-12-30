@@ -1,0 +1,4 @@
+all: compile 
+
+compile:
+	gcc -m32 *.c -o gasm.exe
