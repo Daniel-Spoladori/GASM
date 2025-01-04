@@ -8,7 +8,7 @@
 
 int main(int argc, char const *argv[]){
     if (argc != 4) {
-      	 printf("\nERROR 002:\nInsufficient arguments to GASM \nUsage: <source file> <output file> <architecture flag>\n");
+      	 printf("\nERROR 002:\nInsufficient arguments\nUsage: <source file> <output file> <architecture flag>\n");
       	return 2;
     }
 
