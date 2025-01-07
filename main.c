@@ -20,10 +20,23 @@ int main(int argc, char const *argv[]){
 		char line[lineSize];
 
 	if (file){
-		printf("Reading file data...\n");
+
+		printf("Reading file data...\n\n");
+		int lineCount = 0;
+
 		while (fgets(line, lineSize, file)) {
-			printf("DATA: %s", line);
-			
+			removeSpecialChars(line);
+			char *results = strtok(line, " ");
+
+
+
+			while(results != NULL) {
+				printf("%s\n",checkToken(results));
+
+				results = strtok(NULL, " ");				
+			}
+
+			lineCount++;
         	}
 
 		fclose(file);
