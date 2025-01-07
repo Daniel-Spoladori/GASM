@@ -31,7 +31,10 @@ int main(int argc, char const *argv[]){
 
 
 			while(results != NULL) {
-				printf("%s\n",checkToken(results));
+				if(checkToken(results)){
+					printf("%s\n",checkToken(results));
+				}
+				printf("raw: %s\n", results);
 
 				results = strtok(NULL, " ");				
 			}
