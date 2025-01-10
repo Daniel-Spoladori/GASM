@@ -1,10 +1,11 @@
 #include <string.h>
 #include <stdio.h>
+#include <ctype.h>
 #include "tokens.h"
 #include "lib.h"
 #include "lexer.h"
 
-#define lineSize 1024
+#define lineSize 4096
 
 int main(int argc, char const *argv[]){
     if (argc != 4) {
@@ -20,7 +21,6 @@ int main(int argc, char const *argv[]){
 		char line[lineSize];
 
 	if (file){
-
 		printf("Reading file data...\n\n");
 		int lineCount = 0;
 
@@ -28,15 +28,13 @@ int main(int argc, char const *argv[]){
 			removeSpecialChars(line);
 			char *results = strtok(line, " ");
 
-
-
 			while(results != NULL) {
 				if(checkToken(results)){
 					printf("%s\n",checkToken(results));
 				}
 				printf("raw: %s\n", results);
 
-				results = strtok(NULL, " ");				
+				results = strtok(NULL, " ");
 			}
 
 			lineCount++;
