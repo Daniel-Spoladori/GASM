@@ -1,5 +1,5 @@
 #ifndef LEXER_H
 #define LEXER_H
-	const char* checkToken(const char* element);
-	const char* getParameters();
+	const char* lookupToken(const char* element);
+	const int getTokenParameters();
 #endif

@@ -4,7 +4,7 @@
 	static const struct {
 		const char* keyword;
 		const char* token;
-	} tokens[] = {
+	} tokenArray[] = {
 		{"inc", "TKN_increment"},
 		{"dec", "TKN_decrement"},
 		{"add", "TKN_add"},

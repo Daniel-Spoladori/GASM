@@ -1,5 +1,5 @@
 #ifndef ERRORS_H
-	#define ERRORS_HB_H
+	#define ERRORS_H
 	
 	#define
 	
