@@ -5,13 +5,13 @@ void clearScreen()
 	system("@cls||clear");
 }
 
-void removeSpecialChars(char *str) {
+void removeSpecialChars(char *inputData) {
 	int readIndex = 0, writeIndex = 0;
-	while (str[readIndex] != '\0') {
-		if (str[readIndex] != '\n' && str[readIndex] != '\r') {
-			str[writeIndex++] = str[readIndex];
+	while (inputData[readIndex] != '\0') {
+		if (inputData[readIndex] != '\n' && inputData[readIndex] != '\r') {
+			inputData[writeIndex++] = inputData[readIndex];
 		}
 		readIndex++;
 	}
-	str[writeIndex] = '\0';
+	inputData[writeIndex] = '\0';
 }
