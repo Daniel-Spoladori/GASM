@@ -13,7 +13,7 @@ const char* lookupToken(const char *searchToken){
 	return NULL;
 }
 
-const int getTokenParameters(const char *inputData,  const char *searchSequence ){
+const int getTokenParameters(const char *inputData,  const char *searchSequence){
 
 	bool isNumberFound = false;
 	int number = 0;
